@@ -28,4 +28,31 @@
       </class> <!-- testNG.TestClassXYZ -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testNG.TestClassABC">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="openBrowser"/>
+          <include name="creatPomObjects"/>
+          <include name="afterTest"/>
+          <include name="beforeMehtod"/>
+          <include name="verifyDownloadFilebutton"/>
+        </methods>
+      </class> <!-- testNG.TestClassABC -->
+      <class name="testNG.TestClassXYZ">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeMehtod"/>
+          <include name="openBrowser"/>
+          <include name="creatPomObjects"/>
+          <include name="verifyDownloadFilebutton"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testNG.TestClassXYZ -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

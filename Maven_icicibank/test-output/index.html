@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\sanket\eclipse-workspace\Maven_icicibank\icicisanity.xml</span>
+                    <span>C:\Users\sanket\git\Maven_icicibank_GitHub\Maven_icicibank\icicisanity.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -112,6 +112,16 @@
                         <a href="#" panel-name="suite-Suite" title="testNG.TestClassABC" class="method navigator-link" hash-for-method="verifyDownloadFilebutton">verifyDownloadFilebutton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestClassABC" class="method navigator-link" hash-for-method="verifyDownloadFilebutton">verifyDownloadFilebutton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestClassXYZ" class="method navigator-link" hash-for-method="verifyDownloadFilebutton">verifyDownloadFilebutton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
@@ -123,12 +133,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestClassABC" class="method navigator-link" hash-for-method="verifytoGrowWelthButton">verifytoGrowWelthButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testNG.TestClassXYZ" class="method navigator-link" hash-for-method="verifytoGrowWelthButton">verifytoGrowWelthButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testNG.TestClassABC" class="method navigator-link" hash-for-method="verifytoGrowWelthButton">verifytoGrowWelthButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestClassXYZ" class="method navigator-link" hash-for-method="verifytoGrowWelthButton">verifytoGrowWelthButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -154,7 +174,19 @@
                   <a name="verifyDownloadFilebutton">
                   </a> <!-- verifyDownloadFilebutton -->
                   <span class="method-name">verifyDownloadFilebutton</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.icicibank.com/form-center] but found [https://www.icicibank.com/form-center?ITM=nli_cms_download_forms_footer_link]
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.icicibank.com/form-center] but found [https://www.icicibank.com/form-center?ITM=nli_cms_form_center_footer_link]
+	at testNG.TestClassABC.verifyDownloadFilebutton(TestClassABC.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDownloadFilebutton">
+                  </a> <!-- verifyDownloadFilebutton -->
+                  <span class="method-name">verifyDownloadFilebutton</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.icicibank.com/form-center] but found [https://www.icicibank.com/]
 	at testNG.TestClassABC.verifyDownloadFilebutton(TestClassABC.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 33 stack frames
@@ -174,7 +206,19 @@
                   <a name="verifyDownloadFilebutton">
                   </a> <!-- verifyDownloadFilebutton -->
                   <span class="method-name">verifyDownloadFilebutton</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.icicibank.com/form-center] but found [https://www.icicibank.com/form-center?ITM=nli_cms_download_forms_footer_link]
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.icicibank.com/form-center] but found [https://www.icicibank.com/form-center?ITM=nli_cms_form_center_footer_link]
+	at testNG.TestClassXYZ.verifyDownloadFilebutton(TestClassXYZ.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDownloadFilebutton">
+                  </a> <!-- verifyDownloadFilebutton -->
+                  <span class="method-name">verifyDownloadFilebutton</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.icicibank.com/form-center] but found [https://www.icicibank.com/]
 	at testNG.TestClassXYZ.verifyDownloadFilebutton(TestClassXYZ.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 33 stack frames
@@ -196,6 +240,13 @@
                   <span class="method-name">verifytoGrowWelthButton</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifytoGrowWelthButton">
+                  </a> <!-- verifytoGrowWelthButton -->
+                  <span class="method-name">verifytoGrowWelthButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
@@ -211,12 +262,19 @@
                   <span class="method-name">verifytoGrowWelthButton</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifytoGrowWelthButton">
+                  </a> <!-- verifytoGrowWelthButton -->
+                  <span class="method-name">verifytoGrowWelthButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sanket\eclipse-workspace\Maven_icicibank\icicisanity.xml</span>
+            <span class="header-content">C:\Users\sanket\git\Maven_icicibank_GitHub\Maven_icicibank\icicisanity.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -230,6 +288,13 @@
       &lt;class name=&quot;testNG.TestClassABC&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testNG.TestClassXYZ&quot;/&gt;
+      &lt;class name=&quot;testNG.TestClassABC&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,6 +307,9 @@
             <ul>
               <li>
                 <span class="test-name">ChromeTest (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">FirefoxTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,28 +335,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyDownloadFilebutton')
-data.setCell(0, 2, 'testNG.TestClassABC')
-data.setCell(0, 3, 1111);
+data.setCell(0, 2, 'testNG.TestClassXYZ')
+data.setCell(0, 3, 1266);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyDownloadFilebutton')
-data.setCell(1, 2, 'testNG.TestClassXYZ')
-data.setCell(1, 3, 1001);
+data.setCell(1, 2, 'testNG.TestClassABC')
+data.setCell(1, 3, 1180);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifytoGrowWelthButton')
+data.setCell(2, 1, 'verifyDownloadFilebutton')
 data.setCell(2, 2, 'testNG.TestClassXYZ')
-data.setCell(2, 3, 136);
+data.setCell(2, 3, 474);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifytoGrowWelthButton')
+data.setCell(3, 1, 'verifyDownloadFilebutton')
 data.setCell(3, 2, 'testNG.TestClassABC')
-data.setCell(3, 3, 9);
+data.setCell(3, 3, 418);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifytoGrowWelthButton')
+data.setCell(4, 2, 'testNG.TestClassXYZ')
+data.setCell(4, 3, 13);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifytoGrowWelthButton')
+data.setCell(5, 2, 'testNG.TestClassXYZ')
+data.setCell(5, 3, 9);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifytoGrowWelthButton')
+data.setCell(6, 2, 'testNG.TestClassABC')
+data.setCell(6, 3, 6);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifytoGrowWelthButton')
+data.setCell(7, 2, 'testNG.TestClassABC')
+data.setCell(7, 3, 6);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -324,89 +408,185 @@ return data;
               <div class="chronological-class-name">testNG.TestClassXYZ</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(Chrome)</span>
-                <span class="method-start">956 ms</span>
+                <span class="method-start">969 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">creatPomObjects</span>
-                <span class="method-start">1629 ms</span>
+                <span class="method-start">1601 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMehtod</span>
-                <span class="method-start">1652 ms</span>
+                <span class="method-start">1625 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyDownloadFilebutton</span>
-                <span class="method-start">4434 ms</span>
+                <span class="method-start">4224 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyDownloadFilebutton status=FAILURE method=TestClassXYZ.verifyDownloadFilebutto...)</span>
-                <span class="method-start">5437 ms</span>
+                <span class="method-start">5496 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMehtod</span>
-                <span class="method-start">5583 ms</span>
+                <span class="method-start">5690 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifytoGrowWelthButton</span>
-                <span class="method-start">6378 ms</span>
+                <span class="method-start">6764 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifytoGrowWelthButton status=SUCCESS method=TestClassXYZ.verifytoGrowWelthButton(...)</span>
-                <span class="method-start">6515 ms</span>
+                <span class="method-start">6778 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">6520 ms</span>
+                <span class="method-start">6782 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNG.TestClassABC</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">creatPomObjects</span>
-                <span class="method-start">6521 ms</span>
+                <span class="method-start">6783 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMehtod</span>
-                <span class="method-start">6523 ms</span>
+                <span class="method-start">6784 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyDownloadFilebutton</span>
-                <span class="method-start">8649 ms</span>
+                <span class="method-start">9671 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyDownloadFilebutton status=FAILURE method=TestClassABC.verifyDownloadFilebutto...)</span>
-                <span class="method-start">9761 ms</span>
+                <span class="method-start">10852 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMehtod</span>
-                <span class="method-start">9881 ms</span>
+                <span class="method-start">10965 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifytoGrowWelthButton</span>
-                <span class="method-start">11363 ms</span>
+                <span class="method-start">11862 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifytoGrowWelthButton status=SUCCESS method=TestClassABC.verifytoGrowWelthButton(...)</span>
-                <span class="method-start">11372 ms</span>
+                <span class="method-start">11869 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">11873 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">11873 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.TestClassXYZ</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">11955 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.TestClassABC</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser(Firefox)</span>
+                <span class="method-start">12077 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.TestClassXYZ</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser(Firefox)</span>
+                <span class="method-start">14055 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">creatPomObjects</span>
+                <span class="method-start">15548 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMehtod</span>
+                <span class="method-start">15549 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDownloadFilebutton</span>
+                <span class="method-start">18457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyDownloadFilebutton status=FAILURE method=TestClassXYZ.verifyDownloadFilebutto...)</span>
+                <span class="method-start">18932 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMehtod</span>
+                <span class="method-start">19027 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifytoGrowWelthButton</span>
+                <span class="method-start">20213 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifytoGrowWelthButton status=SUCCESS method=TestClassXYZ.verifytoGrowWelthButton(...)</span>
+                <span class="method-start">20223 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">11376 ms</span>
+                <span class="method-start">20230 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.TestClassABC</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">creatPomObjects</span>
+                <span class="method-start">20230 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMehtod</span>
+                <span class="method-start">20231 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDownloadFilebutton</span>
+                <span class="method-start">25378 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyDownloadFilebutton status=FAILURE method=TestClassABC.verifyDownloadFilebutto...)</span>
+                <span class="method-start">25797 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMehtod</span>
+                <span class="method-start">26213 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifytoGrowWelthButton</span>
+                <span class="method-start">27366 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifytoGrowWelthButton status=SUCCESS method=TestClassABC.verifytoGrowWelthButton(...)</span>
+                <span class="method-start">27372 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">27378 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">11376 ms</span>
+                <span class="method-start">27378 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testNG.TestClassXYZ</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">11476 ms</span>
+                <span class="method-start">28078 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
